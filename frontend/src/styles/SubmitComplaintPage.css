@@ -1,0 +1,86 @@
+/* SubmitComplaintPage.css - Dark Mode + Responsive */
+
+.complaint-form-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem;
+  background: #f9f7f7fd;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgb(62, 61, 61);
+  color: #f5f5f5;
+}
+
+.complaint-form-container h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+  color: hsl(0, 0%, 4%);
+}
+
+.complaint-form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.complaint-form-container label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #777777;
+}
+
+.complaint-form-container textarea {
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background-color: #2e2d2d;
+  color: #f0f0f0;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.complaint-form-container button {
+  background-color: #079f4e;
+  color: white;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.complaint-form-container button:hover {
+  background-color: #024923;
+}
+
+.status-message {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #026e51;
+  text-align: center;
+}
+
+.ai-result {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background-color: #292929;
+  border-left: 4px solid #00bfff;
+  border-radius: 6px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .complaint-form-container {
+    padding: 1.25rem;
+    margin: 1rem;
+  }
+
+  .complaint-form-container h2 {
+    font-size: 1.25rem;
+  }
+
+  .complaint-form-container button {
+    font-size: 0.95rem;
+    padding: 0.65rem;
+  }
+}
