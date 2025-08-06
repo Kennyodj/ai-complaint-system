@@ -22,7 +22,7 @@ class ComplaintRequest(BaseModel):
     text: str
 
 # Load the zero-shot classifier
-classifier = pipeline("zero-shot-classification", model="facebook/bart-large-mnli")
+classifier = pipeline("zero-shot-classification", model="valhalla/distilbart-mnli-12-1")
 
 # Define categories
 CATEGORIES = [
